@@ -12,7 +12,7 @@ var fileInput = $('.file-input');
 var droparea = $('.file-drop-area');
 
 // highlight drag area
-fileInput.on('dragenter focus click', function() {
+fileInput.on('dragenter', function() {
   droparea.addClass('is-active');
 });
 

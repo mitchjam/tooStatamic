@@ -26,7 +26,10 @@
   }
   &.is-full {
     background: $primary;
-    color: #fff;
+    color: $white;
+    .fake-btn {
+        border-color: $white;
+    }
   }
 }
 
