@@ -15,7 +15,7 @@
 }
 
 .file-drop-area {
-  border: 1px dashed lighten($brand-primary, 30%);
+  border: 1px dashed $brand-primary;
   border-radius: 3px;
   position: relative;
   max-width: 100%;
