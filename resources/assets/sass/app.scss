@@ -15,16 +15,23 @@
 }
 
 .file-drop-area {
-  border: 1px dashed $brand-primary;
+  border: 1px dashed $primary;
   border-radius: 3px;
   position: relative;
   max-width: 100%;
   padding: 26px 20px 30px;
   transition: 0.2s;
+  &.is-active {
+    background: $grey-light;
+  }
+  &.is-full {
+    background: $primary;
+    color: #fff;
+  }
 }
 
 .fake-btn {
-  border: 1px solid #9E9EC4;
+  border: 1px solid $grey-dark;
   border-radius: 3px;
   padding: 8px 15px;
   margin-right: 8px;

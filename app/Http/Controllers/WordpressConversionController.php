@@ -12,7 +12,7 @@ class WordpressConversionController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'export_file' => 'mimes:xml',
+            'export_file' => 'required|mimes:xml|max:10240',
         ]);
         
         $posts = Wordpress::fromExport($request->file('export_file')->path())->toStatamic();
