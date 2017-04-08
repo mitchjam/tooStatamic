@@ -5,7 +5,7 @@
     <form action="/convert/wordpress" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         
-        <h2 class="title" for="backup_file">Wordpress Posts <i class="fa fa-arrow-right fa-center"></i> Statamic Files</h2>
+        <h2 class="title">Wordpress Posts <i class="fa fa-arrow-right fa-center"></i> Statamic Files</h2>
     
         <div class="field file-drop-area">
             <h4 class="file-msg js-set-number">Select your XML export file or drop it here...</h4>
