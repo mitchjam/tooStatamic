@@ -1,11 +1,11 @@
 @extends('layout')
 
 @section('content')
-<div class="columns">
+<div class="column is-half-desktop is-offset-one-quarter">
     <form action="/convert/wordpress" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         
-        <h2 class="title" for="backup_file">Convert Your Wordpress Posts To Statamic</h2>
+        <h2 class="title" for="backup_file">Wordpress Posts <i class="fa fa-arrow-right fa-center"></i> Statamic Files</h2>
     
         <div class="field file-drop-area">
             <span class="fake-btn">Choose Export File</span>

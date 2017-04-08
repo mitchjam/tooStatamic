@@ -7,6 +7,13 @@
 
 @import "~bulma/bulma";
 
+@import "~font-awesome/scss/font-awesome";
+
+.fa-center {
+    padding: .4em;
+    font-size: .6em;
+}
+
 .file-drop-area {
   border: 1px dashed lighten($brand-primary, 30%);
   border-radius: 3px;
