@@ -8,8 +8,7 @@
         <h2 class="title" for="backup_file">Wordpress Posts <i class="fa fa-arrow-right fa-center"></i> Statamic Files</h2>
     
         <div class="field file-drop-area">
-            <span class="fake-btn">Choose Export File</span>
-            <span class="file-msg js-set-number">or drop it here...</span>
+            <h4 class="file-msg js-set-number">Choose file or drop it here...</h4>
             <input class="file-input" type="file" name="export_file">
         </div>
     

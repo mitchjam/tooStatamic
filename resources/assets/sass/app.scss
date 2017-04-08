@@ -34,7 +34,7 @@
 }
 
 .fake-btn {
-  border: 1px solid $grey-dark;
+  border: 1px solid $grey-light;
   border-radius: 3px;
   padding: 8px 15px;
   margin-right: 8px;
@@ -43,7 +43,7 @@
 }
 
 .file-msg {
-  font-size: small;
+  font-size: 1rem;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
