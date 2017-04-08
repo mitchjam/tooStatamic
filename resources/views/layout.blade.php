@@ -13,7 +13,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-
+        
+        @if(! App::isLocal())
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,6 +25,7 @@
             ga('create', 'UA-57598949-7', 'auto');
             ga('send', 'pageview');
         </script>
+        @endif
 
     </head>
     <body>
