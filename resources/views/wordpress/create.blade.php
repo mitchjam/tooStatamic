@@ -15,7 +15,7 @@
     
         <div class="field">
             <p class="control">
-                <button class="button is-warning">Convert</button>
+                <button class="button is-primary is-outlined">Convert</button>
             </p>
         </div>
     
