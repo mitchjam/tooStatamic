@@ -38,12 +38,8 @@
             </div>
         @endif
 
-        <div class="section">
-            <div class="container">
-                <div class="columns">
-                    @yield('content')
-                </div>
-            </div>
+        <div class="container">                
+            @yield('content')
         </div>
 
         <script src="{{ mix('/js/app.js') }}"></script>
