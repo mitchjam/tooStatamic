@@ -7,7 +7,9 @@
 
         <title>Statamic Converter</title>
 
-        <meta name="description" content="This is an implementation of Jack Mcdades statamic importer.">
+        <meta name="title" content="Statamic Converter" />
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="This is an implementation of Jack Mcdades Wordpress to Statamic importer." />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
