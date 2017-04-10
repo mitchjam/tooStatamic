@@ -15,7 +15,11 @@ class WordpressConversionController extends Controller
             'export_file' => 'required|mimes:xml|max:10240',
         ]);
         
-        $posts = Wordpress::fromExport($request->file('export_file')->path())->toStatamic();
+        try {
+            $posts = Wordpress::fromExport($request->file('export_file')->path())->toStatamic();
+        } catch (\Exception $e) {
+            return redirect()->back()->withErrors(["Your file wasn't in the expected format. Please try another export file."]);
+        }
 
         $filePath = storage_path('app/' . str_random(10)) . '.zip';
 

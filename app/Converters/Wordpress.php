@@ -19,6 +19,7 @@ class Wordpress
     }
 
     public function toStatamic() {
+
         $posts = collect();
 
         if (\File::exists($this->exportPath)) {
@@ -68,7 +69,7 @@ class Wordpress
             $posts->put($filename, $markdown);
           }
         }
-        
+
         return $posts;
     }
 
