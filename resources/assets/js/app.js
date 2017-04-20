@@ -40,3 +40,11 @@ fileInput.on('change', function() {
         droparea.removeClass('is-full');
     }
 });
+
+$('.inquire.button').click(event => {
+  $('.modal').addClass('is-active');
+});
+
+$('.modal-close').click(event => {
+  $('.modal').removeClass('is-active');
+});

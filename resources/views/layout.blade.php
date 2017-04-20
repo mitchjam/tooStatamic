@@ -32,6 +32,12 @@
     </head>
     <body>
 
+        @if(session('message'))
+            <div class="notification is-primary has-text-centered">
+                <li>{{ session('message') }}</li>
+            </div>
+        @endif
+
         @if($errors->any())
             <div class="notification is-danger has-text-centered">
                 @foreach ($errors->all() as $error)

@@ -1,0 +1,1 @@
+<p>New Inquiry: {{ $description }}</p>

@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('wordpress.create');
 });
 
-Route::post('convert/wordpress', 'WordpressConversionController@store');
+Route::post('convert/wordpress', 'WordpressConversionController@store')->name('convert.wordpress');
+
+Route::post('contact', 'InquiryController@store')->name('inquire');

@@ -26,6 +26,10 @@ class Wordpress
           $xml = simplexml_load_file($this->exportPath);
           
           foreach ($xml->channel->item as $post) {
+            if ($post->children('wp', true)->post_type == 'attachmene') {
+                
+            }
+
             if ($post->children('wp', true)->post_type != 'post') {
                 continue;
             }

@@ -4,7 +4,7 @@
 <section class="section">
     <div class="columns">
         <div class="column is-half-desktop is-offset-one-quarter">
-            <form action="/convert/wordpress" method="post" enctype="multipart/form-data">
+            <form action="{{ route('convert.wordpress') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 
                 <h2 class="title">Wordpress Posts <i class="fa fa-arrow-right fa-center"></i> Statamic Files</h2>
@@ -28,5 +28,45 @@
             
         </div>
     </div>
+</section>
+
+<hr>
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+
+        <div class="box">
+            <form action="{{ route('inquire') }}" method="POST">
+                {{ csrf_field() }}
+
+                <div class="field">
+                    <label for="from" class="field-label">Email</label>
+                    <p class="control">
+                        <input class="input" type="email" name="from">
+                    </p>
+                </div>
+                  
+                <div class="field">
+                    <label for="description" class="field-label">Describe the Conversion. (Current CMS, Type of content, etc.)</label>
+                    <p class="control">
+                        <textarea class="textarea" name="description"></textarea>
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                       <button class="button is-primary is-outlined">Submit</button>
+                     </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <button class="modal-close"></button>
+</div>
+
+<section class="section has-text-centered">
+    <button class="inquire button is-medium is-danger is-outlined">Need a custom conversion? We can help, it's what we do.</button>
 </section>
 @endsection
