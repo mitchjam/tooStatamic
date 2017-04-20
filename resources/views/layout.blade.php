@@ -7,9 +7,9 @@
 
         <title>Statamic Converter</title>
 
-        <meta name="title" content="Statamic Converter" />
+        <meta name="title" content="Wordpress to Statamic Converter" />
         <meta name="robots" content="index,follow" />
-        <meta name="description" content="Convert your Wordpress site to Stataimic. An implementation of Jack Mcdades Wordpress to Statamic importer." />
+        <meta name="description" content="Convert your Wordpress posts to Stataimic. An implemsentation of Jack Mcdades Wordpress to Statamic importer." />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
