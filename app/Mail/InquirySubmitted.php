@@ -11,6 +11,8 @@ class InquirySubmitted extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $clientEmail;
+
     public $description;
 
     /**

@@ -1,1 +1,2 @@
-<p>New Inquiry: {{ $description }}</p>
+<p>New Inquiry From: {{ $clientEmail }} </p>
+<p>Description: {{ $description }}</p>
